@@ -1,0 +1,406 @@
+
+  <!DOCTYPE html>
+  <html>
+    <head>
+      <!--Import materialize.css-->
+      <!--<link type="text/css" rel="stylesheet" href="{{ url_for('static', filename='css/materialize.min.css') }}"  media="screen,projection"/> -->
+      <link rel="stylesheet" href="https://cdn.metroui.org.ua/v4.3.2/css/metro-all.min.css">
+      <title>Course Recommendation System | Project in DSA by Girlie R. Turan & Ladi Kyla N. Cole</title>
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    </head>
+    <h1>Course Recommendation System</h1>
+    <body>
+    <div class="containter">
+        <form method="POST" action="result">
+            <div id="science_quiz">
+                <h2>Science</h2>
+                <label>What is the study of interaction of matter and energy?</label>
+                <select data-role="select" name="science_question1">
+                    <option value="a">Physics</option>
+                    <option value="b">Biology</option>
+                    <option value="c">Chemistry</option>
+                    <option value="d">Astronomy</option>
+                </select>
+                <label>What land mammal holds the record for the greatest age?</label>
+                <select data-role="select" name="science_question2">
+                    <option value="a">Horse</option>
+                    <option value="b">Elephant</option>
+                    <option value="c">Humans</option>
+                    <option value="d">Lion</option>
+                </select>
+                <label>What is the better known name for the deadly poison prussic acid?</label>
+                <select data-role="select" name="science_question3">
+                    <option value="a">Hydrocloric Acid</option>
+                    <option value="b">Cyanide</option>
+                    <option value="c">Mercury</option>
+                    <option value="d">Flouroantimonic Acid</option>
+                </select>
+                <label>What yellow metal is an alloy of copper and zinc?</label>
+                <select data-role="select" name="science_question4">
+                    <option value="a">Titanium</option>
+                    <option value="b">Stainless Steel</option>
+                    <option value="c">Tin</option>
+                    <option value="d">Brass</option>
+                </select>
+                <label>The study of phenomena at very low temperatures is called?</label>
+                <select data-role="select" name="science_question5">
+                    <option value="a">Heat Transfer</option>
+                    <option value="b">Morphology</option>
+                    <option value="c">Crystallography</option>
+                    <option value="d">Cryogenics </option>
+                </select>
+            </div>
+            <div id="math_quiz">
+            <h2>Math</h2>
+            <label>Complete the series, 1/12, 1/6, 1/4, 1/3, __</label>
+            <select data-role="select" name="math_question1">
+                <option value="a">5/12</option>
+                <option value="b">1/2</option>
+                <option value="c">1/4</option>
+                <option value="d">2/3</option>
+            </select>
+            <label>Complete the series, 0.5, 0.55, 0.65, 0.8, __</label>
+            <select data-role="select" name="math_question2">
+                <option value="a">0.9</option>
+                <option value="b">0.85</option>
+                <option value="c">1</option>
+                <option value="d">0.95</option>
+            </select>
+            <label>(2x1/2), (4/1x2), (6x1/2), __</label>
+            <select data-role="select" name="math_question3">
+                <option value="a">32</option>
+                <option value="b">16</option>
+                <option value="c">8</option>
+                <option value="d">24</option>
+            </select>
+            <label>Sum of all odd numbers between 60 to 120</label>
+            <select data-role="select" name="math_question4">
+                <option value="a">3775</option>
+                <option value="b">4000</option>
+                <option value="c">3050</option>
+                <option value="d">2700</option>
+            </select>
+            <label>What is percent of 16 is 40?</label>
+            <select data-role="select" name="math_question5">
+                <option value="a">2.5%</option>
+                <option value="b">2500%</option>
+                <option value="c">25%</option>
+                <option value="d">250% </option>
+            </select>
+            </div>
+            <div id="language_quiz">
+            <h2>Language</h2>
+            <label>What is the study of languages?</label>
+            <select data-role="select" name="language_question1">
+                <option value="a">Phonetics</option>
+                <option value="b">Syntax</option>
+                <option value="c">Linguistics</option>
+                <option value="d">Semantics</option>
+            </select>
+            <label>It is the study of the meaning of languages.</label>
+            <select data-role="select" name="language_question2">
+                <option value="a">Syntax</option>
+                <option value="b">Linguistics</option>
+                <option value="c">Semantics</option>
+                <option value="d">Phonetics</option>
+            </select>
+            <label>Phonetics is the study of the sounds of language. What do we call to this sounds?</label>
+            <select data-role="select" name="language_question3">
+                <option value="a">Phonemes</option>
+                <option value="b">Morphemes</option>
+                <option value="c">Syntax</option>
+                <option value="d">Lexicology</option>
+            </select>
+            <label>What is the study of language as it pertains to social classes, ethnic groups, and genders?</label>
+            <select data-role="select" name="language_question4">
+                <option value="a">Psycholinguistics</option>
+                <option value="b">Sociolinguistics</option>
+                <option value="c">Comparative linguistics</option>
+                <option value="d">Linguistics</option>
+            </select>
+            <label>It is the study of language from a cognitive and developmental law.</label>
+            <select data-role="select" name="language_question5">
+                <option value="a">Sociolinguistics</option>
+                <option value="b">Comparative linguistics</option>
+                <option value="c">Linguistics</option>
+                <option value="d">Psycholinguistics </option>
+            </select>
+            </div>
+            <div id="socsci_quiz">
+            <h2>Social Science</h2>
+            <label>What is the scientific study of the human mind and its functions, especially those affecting behavior in a given context?</label>
+            <select data-role="select" name="socsci_question1">
+                <option value="a">Linguistic</option>
+                <option value="b">Sociology</option>
+                <option value="c">Psychology</option>
+                <option value="d">Political Science</option>
+            </select>
+            <label>It shows the man-made borders between countries, states, cities, and/or towns.</label>
+            <select data-role="select" name="socsci_question2">
+                <option value="a">Political Map</option>
+                <option value="b">Physical Map</option>
+                <option value="c">Climate Map</option>
+                <option value="d">Economical Map</option>
+            </select>
+            <label>A foreigner may acquire Filipino citizenship through.</label>
+            <select data-role="select" name="socsci_question3">
+                <option value="a">Extradition</option>
+                <option value="b">Naturalization</option>
+                <option value="c">Rebirth</option>
+                <option value="d">Visa Application</option>
+            </select>
+            <label>What is regarded by the State as a 'primary social economic workforce'?</label>
+            <select data-role="select" name="socsci_question4">
+                <option value="a">Commerce</option>
+                <option value="b">Education</option>
+                <option value="c">Trade</option>
+                <option value="d">Labor</option>
+            </select>
+            <label>The Supreme Court shall be composed of a Chief Justice and how many Associates Justices?</label>
+            <select data-role="select" name="socsci_question5">
+                <option value="a">13</option>
+                <option value="b">15</option>
+                <option value="c">12</option>
+                <option value="d">14 </option>
+            </select>
+            </div>
+            <div id="tech_quiz">
+            <h2>Technology</h2>
+            <label>It is an electronic device that is able to process, store, calculate and retrieve data?</label>
+            <select data-role="select" name="tech_question1">
+                <option value="a">Calculator</option>
+                <option value="b">Computer</option>
+                <option value="c">Amplifier</option>
+                <option value="d">Transciever</option>
+            </select>
+            <label>It is a type of guided media that uses laser for data transmission.</label>
+            <select data-role="select" name="tech_question2">
+                <option value="a">USB</option>
+                <option value="b">Coaxial</option>
+                <option value="c">Ethernet</option>
+                <option value="d">Fiber optic</option>
+            </select>
+            <label>It is the frequency range in electromagnetic spectrum that modern Communication devices operates</label>
+            <select data-role="select" name="tech_question3">
+                <option value="a">Radio wave</option>
+                <option value="b">Microwave</option>
+                <option value="c">UV Rays</option>
+                <option value="d">Gamma Rays</option>
+            </select>
+            <label>What the general term for an algorithm that allows computer to learn from past data?</label>
+            <select data-role="select" name="tech_question4">
+                <option value="a">Machine Learning</option>
+                <option value="b">Reformatting</option>
+                <option value="c">Auto-saving</option>
+                <option value="d">Defragmentation</option>
+            </select>
+            <label>It is the operating system kernel that powers Apple devices</label>
+            <select data-role="select" name="tech_question5">
+                <option value="a">BSD</option>
+                <option value="b">NT</option>
+                <option value="c">Darwin</option>
+                <option value="d">Linux </option>
+            </select>
+            </div>
+            <div id="history_quiz">
+            <h2>History</h2>
+            <label>To whom the Philippines named after?</label>
+            <select data-role="select" name="history_question1">
+                <option value="a">Emperor Philip II of Rome</option>
+                <option value="b">King Philip II of Britain</option>
+                <option value="c">Prince Philip I of Spain</option>
+                <option value="d">King Philip II of Spain</option>
+            </select>
+            <label>When was the Soviet Union collapses?</label>
+            <select data-role="select" name="history_question2">
+                <option value="a">December 31, 1981</option>
+                <option value="b">December 31, 1991</option>
+                <option value="c">January 31, 1991</option>
+                <option value="d">January 31, 1981</option>
+            </select>
+        <label>When was the French Revolution happened?</label>
+        <select data-role="select" name="history_question3">
+                <option value="a">1889 - 1899</option>
+                <option value="b">1939 - 1949</option>
+                <option value="c">1789 - 1799</option>
+                <option value="d">1589 - 1599</option>
+        </select>
+        <label>When was the Gwangyu Uprising happened?</label>
+        <select data-role="select" name="history_question4">
+                <option value="a">1980</option>
+                <option value="b">1970</option>
+                <option value="c">1960</option>
+                <option value="d">1990</option>
+        </select>
+        <label>Who is the first disciple of Jesus Christ?</label>
+        <select data-role="select" name="history_question5">
+                <option value="a">Peter</option>
+                <option value="b">Matthew</option>
+                <option value="c">John</option>
+                <option value="d">Andrew </option>
+        </select>
+        </div>
+        <div id="pe_quiz">
+        <h2>Physical Education</h2>
+        <label>Which of the following is not an Olympic Sport?</label>
+        <select data-role="select" name="pe_question1">
+                <option value="a">Basketball</option>
+                <option value="b">Swimming</option>
+                <option value="c">Athletics</option>
+                <option value="d">Cricket</option>
+        </select>
+        <label>Which of the following activities is best for improving cardiovascular health?</label>
+        <select data-role="select" name="pe_question2">
+                <option value="a">Aerobics</option>
+                <option value="b">Sit ups</option>
+                <option value="c">Bowling</option>
+                <option value="d">Stretching</option>
+        </select>
+        <label>What are the main sources of energy in food?</label>
+        <select data-role="select" name="pe_question3">
+                <option value="a">Protein</option>
+                <option value="b">Cabrohydrates</option>
+                <option value="c">Vitamins</option>
+                <option value="d">Antioxidants</option>
+        </select>
+        <label>What is the strongest muscle in your body?</label>
+        <select data-role="select" name="pe_question4">
+                <option value="a">Biceps</option>
+                <option value="b">Triceps</option>
+                <option value="c">Heart</option>
+                <option value="d">Smooth muscle</option>
+        </select>
+        <label>Which of these types of exercise is best at helping you maintain strong bones?</label>
+        <select data-role="select" name="pe_question5">
+                <option value="a">Aerobics</option>
+                <option value="b">Weight-bearing exercise</option>
+                <option value="c">Resistance exercise</option>
+                <option value="d">All of the above </option>
+        </select>
+        </div>
+        <div id="humanities_quiz">
+        <h2>Humanities</h2>
+        <label>In Greek mythology, what would happen if you looked at Medusa? </label>
+        <select data-role="select" name="humanities_question1">
+                <option value="a">Petrified</option>
+                <option value="b">Liquified</option>
+                <option value="c">Combusted</option>
+                <option value="d">Disintegrated</option>
+        </select>
+        <label>The word "dilemma" originates from the Greek. What is its literal translation into English?</label>
+        <select data-role="select" name="humanities_question2">
+                <option value="a">Double action</option>
+                <option value="b">Double question</option>
+                <option value="c">Double proposition</option>
+                <option value="d">Double chances</option>
+        </select>
+        <label>What does a phrenologist study?</label>
+        <select data-role="select" name="humanities_question3">
+                <option value="a">Human physique</option>
+                <option value="b">Head feature</option>
+                <option value="c">Hand feature</option>
+                <option value="d">Body language</option>
+        </select>
+        <label>What is oolong?</label>
+        <select data-role="select" name="humanities_question4">
+                <option value="a">European herbal plant</option>
+                <option value="b">Poisonous mushroom</option>
+                <option value="c">African dish</option>
+                <option value="d">Traditional Chinese tea</option>
+        </select>
+        <label>Aeolus was the god of what in Greek Mythology?</label>
+        <select data-role="select" name="humanities_question5">
+                <option value="a">Earth</option>
+                <option value="b">Wind</option>
+                <option value="c">Sun</option>
+                <option value="d">Ocean </option>
+        </select>
+        </div>
+        <div id="management_quiz">
+        <h2>Management</h2>
+        <label>The net wealth of the aggregate economy is equal to the sum of?</label>
+        <select data-role="select" name="management_question1">
+                <option value="a">Physical assets</option>
+                <option value="b">Liabilities</option>
+                <option value="c">Financial assets</option>
+                <option value="d">Real assets</option>
+        </select>
+        <label>In what roles do investment bankers perform?</label>
+        <select data-role="select" name="management_question2">
+                <option value="a">Design securities with desirable properties</option>
+                <option value="b">Market new stock and bond issues for firms</option>
+                <option value="c">Provide advice to the firms as to market conditions, price, etc</option>
+                <option value="d">None of the above</option>
+        </select>
+        <label>A document you use to capture all known risks is called?</label>
+        <select data-role="select" name="management_question3">
+                <option value="a">Risk Register</option>
+                <option value="b">Risk Logs</option>
+                <option value="c">Risk Diary</option>
+                <option value="d">Risk List</option>
+        </select>
+        <label>When do you perform Risk Identification?</label>
+        <select data-role="select" name="management_question4">
+                <option value="a">At the beginning of a project</option>
+                <option value="b">During project planning</option>
+                <option value="c">During the whole lifetime of a project</option>
+                <option value="d">During project execution</option>
+        </select>
+        <label>Who should be involved in Risk Management activities?</label>
+        <select data-role="select" name="management_question5">
+                <option value="a">Only Project Team</option>
+                <option value="b">Only Project Manager</option>
+                <option value="c">All stakeholder except clients</option>
+                <option value="d">As many stakeholders as practical </option>
+        </select>
+        </div>
+        <div id="arts_quiz">
+        <h2>Arts</h2>
+        <label>Surrealist painter Rene Magritte was born in which country?</label>
+        <select data-role="select" name="arts_question1">
+                <option value="a">United Kingdom</option>
+                <option value="b">France</option>
+                <option value="c">Belgium</option>
+                <option value="d">Germany</option>
+        </select>
+        <label>In the art style "Op Art", what does "Op" stand for?</label>
+        <select data-role="select" name="arts_question2">
+                <option value="a">Optical</option>
+                <option value="b">Opinion</option>
+                <option value="c">Oppose</option>
+                <option value="d">Open</option>
+        </select>
+        <label>What does the Venus of Brassempouy represent?</label>
+        <select data-role="select" name="arts_question3">
+                <option value="a">Angel</option>
+                <option value="b">Woman’s head</option>
+                <option value="c">Human figure</option>
+                <option value="d">Old man</option>
+        </select>
+        <label>To which artistic movement does Paul Gauguin’s The Yellow Christ belong?</label>
+        <select data-role="select" name="arts_question4">
+                <option value="a">Cloisonnism</option>
+                <option value="b">Impressionism</option>
+                <option value="c">Bauhaus</option>
+                <option value="d">Fauvism</option>
+        </select>
+        <label>Which of these is a paint made from pigments and plastic?</label>
+        <select data-role="select" name="arts_question5">
+                <option value="a">Acetone</option>
+                <option value="b">Tempera</option>
+                <option value="c">Gesso</option>
+                <option value="d">Acrylic </option>
+        </select>
+        </div>
+        <div id="btn">
+            <button class="button success place-right"><span class="mif-checkmark"></span> Submit</button>
+        </div>
+    </form>
+</div>
+      <!--Import jQuery before materialize.js-->
+      <!--<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+      <script type="text/javascript" src="{{ url_for('static', filename='js/materialize.js') }}"></script> -->
+      <script src="https://cdn.metroui.org.ua/v4.3.2/js/metro.min.js"></script>
+    </body>
+  </html>

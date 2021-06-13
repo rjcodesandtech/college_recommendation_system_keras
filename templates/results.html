@@ -1,0 +1,39 @@
+
+  <!DOCTYPE html>
+  <html>
+    <head>
+      <!--Import materialize.css-->
+      <!--<link type="text/css" rel="stylesheet" href="{{ url_for('static', filename='css/materialize.min.css') }}"  media="screen,projection"/> -->
+      <link rel="stylesheet" href="https://cdn.metroui.org.ua/v4.3.2/css/metro-all.min.css">
+      <title>Course Recommendation System | Project in DSA by Girlie R. Turan & Ladi Kyla N. Cole</title>
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    </head>
+    <h1>Course Recommendation System</h1>
+    <body>
+    <div class="containter">
+        <div id="science_quiz">
+            <h2>Results</h2>
+            <p>Based on the process result, I would like to congratulate you that you are highly qualified for courses related to: </p>
+            <h3>{{college}}</h3>
+            <p>Your score in science is: {{science_score}}</p>
+            <p>Your score in mathematics is: {{math_score}}</p>
+            <p>Your score in language is: {{language_score}}</p>
+            <p>Your score in social sciences is: {{socsci_score}}</p>
+            <p>Your score in technology is: {{tech_score}}</p>
+            <p>Your score in history is: {{history_score}}</p>
+            <p>Your score in physical education is: {{pe_score}}</p>
+            <p>Your score in humanities is: {{humanities_score}}</p>
+            <p>Your score in management is: {{management_score}}</p>
+            <p>Your score in arts is: {{arts_score}}</p>
+    </div>
+    <div id="btn">
+        <a href="{{url_for('hello')}}" class="button success flex-justify-center"><span class="mif-refresh"></span> Retake</a>
+    </div>
+</div>
+      <!--Import jQuery before materialize.js-->
+      <!--<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+      <script type="text/javascript" src="{{ url_for('static', filename='js/materialize.js') }}"></script> -->
+      <script src="https://cdn.metroui.org.ua/v4.3.2/js/metro.min.js"></script>
+    </body>
+  </html>
