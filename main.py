@@ -106,4 +106,4 @@ if __name__ == "__main__":
     # app.run() for debug
     #ui.run()
     init_gui(app, port=5000, width=800, height=600,
-             window_title="Course Recommendation System | Project in DSA by Girlie R. Turan & Ladi Kyla N. Cole", argv=None)
+             window_title="Course Recommendation System | @rjcodesandtech", argv=None)
